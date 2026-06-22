@@ -149,19 +149,49 @@ img {
 .welcome-section {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh; /* Changed from height to min-height */
   background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  padding: 120px 20px 60px; /* Gives the bottom image breathing room */
+  box-sizing: border-box;
 }
+
+.welcome-avatar {
+  width: 400px;
+  max-width: 90%;
+  height: 600px;
+  object-fit: cover;
+  object-position: center top;
+  margin-top: 3rem;    
+  margin-bottom: 3rem;   
+  border-radius: 12px;     
+}
+
+@media (max-width: 480px) {
+  .welcome-avatar {
+    width: 280px;
+    height: 420px;
+  }
+}
+
 
 .welcome-section > p {
   font-size: 3rem;
   font-weight: 200;
   font-style: italic;
   color: var(--main-red);
+  text-align: center;
+}
+
+.welcome-section .bio-text {
+  font-size: 3rem;
+  font-weight: 200;
+  font-style: italic;
+  color: var(--main-red);
+  text-align: center;
 }
 
 /* Projects section */
@@ -338,3 +368,4 @@ footer i {
     text-align: center;
   }
 }
+

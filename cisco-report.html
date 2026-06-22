@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://googleapis.com" rel="stylesheet" />
+  <link href="https://googleapis.com" rel="stylesheet" />
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #2b323c;
+    }
+    .pdf-container {
+      margin-top: 78px; /* Clears the fixed navigation bar */
+      width: 100%;
+      height: calc(100vh - 78px);
+    }
+    object {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation bar matching your portfolio exactly -->
+  <nav id="navbar" class="nav">
+    <ul class="nav-list">
+      <li>
+        <a href="index.html">Back to Portfolio</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Embedded PDF Frame -->
+  <div class="pdf-container">
+    <object data="cisco-analysis.pdf" type="application/pdf">
+      <p style="color: #fff; text-align: center; padding: 40px; font-family: 'Poppins', sans-serif;">
+        Your browser doesn't support embedded PDFs. 
+        <a href="cisco-analysis.pdf" style="color: var(--main-red); font-weight: bold;">Click here to download it instead.</a>
+      </p>
+    </object>
+  </div>
+
+</body>
+</html>
